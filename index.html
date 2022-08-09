@@ -4,144 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css" />
-
-    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <title>Restaurant</title>
+    
 </head>
 <body>
     <header>
-        <style>
-
-
-    body{
-    
-        background-image: url("./backg.jpg")
-        
-      
-}
-     header {
-
+        <div ">
+            <h1>Restaurant</h1>
             
-        background-color:antiquewhite ;
-        position: fixed;
-        display:flex;
-        flex-wrap: wrap;
-        width: 100%;
-        top: 0;
+          </div>
     
-        border-bottom: 2px solid #607EAA;
-        justify-content: space-evenly;
-        vertical-align: middle;
-    } 
-
-    table, th, td ,tr{
-        
-        border: 2px solid blue ;
-         width: 50%;
-         text-align: center;
-         color:hotpink;
-         margin-left:auto; 
-         margin-right:auto;
-         margin-top: auto;
-         margin-bottom: auto;
-         padding-top: 20px;
-         
-         
-       }
-       th {
-        height: 70px;
-        padding: 15px;
-      }
-      td{height: 50px; padding: 15px; width: 25%;}
-       tr:hover {background-color:cornsilk;}
-       tr:nth-child(01) {background-color:lightblue;}
-     
-       input[type=text]{
-        width: 50%;
-        padding: 12px 20px;
-         margin: 8px 0;
-         box-sizing: border-box;
-         border: 2px solid red;
-  border-radius: 4px;
-  background-color:rgb(128, 77, 12);
-  color: white;
-  transition: width 0.4s ease-in-out;
-        margin-top: 100px;
-      }
-      select {
-        width: 50%;
-        padding: 16px 20px;
-        border: none;
-        border-radius: 4px;
-        background-color:antiquewhite;
-      }
-      button{
-        background-color:crimson;
-  border: none;
-  color: white;
-  padding: 16px 32px;
-  text-decoration: none;
-  margin: 4px 2px;
-  cursor: pointer;
-      }
-      
-      label {
-        padding: 12px 12px 12px 0;
-        display: inline-block;
-        color: rgb(114, 10, 34);
-        background-color:azure;
-      }
+          <nav>
+            <a href="./index.html" >Home</a>
+            <a href="./statistics.html" >Statistics</a>
+          </nav>
 
 
 
-        </style>
-        <nav>
-            <ul>
-                <li><h1 style="color:crimson ;gap:14 px ;">Restarant</h1>
-                </li>
-                <li><a href="https://www.google.com/" style="color:rgb(114, 102, 104)">Home</a> 
-                </li>
-            </ul>
-        </nav>
     </header>
-    <main>
-        <form id="form">
-             
-            <label for="FoodName">Food Name </label>
-            <input  type="text"  id="FoodName">
-            <br> 
-            <label for="Price">Price </label>
-            <input  type="text"  id="Price">
-            <br> 
-            <label for="FoodTYPE">Type of food </label>
-            <select name="TypeOfFood" id="type">
-                <option value="empty"></option>
-                <option value="Fr&&veg">Fruit and vegetables.</option>
-                <option value="Starchyfood">Starchy food</option>
-                <option value="Dairy">Dairy</option>
-                <option value="Protein">Protein</option>
-                <option value="Fat">Fat</option>
-            </select>
-            <br> 
-            <button type="submit" id="btn">Submit</button>
-        </form>
-        <table id="myTable">
-            
-            <tr>
-                <th style="color:crimson"> ID</th>
-                <th style="color:crimson"> Name</th>
-                <th style="color:crimson"> Type</th>
-                <th style="color:crimson"> Price</th>
-            </tr>
-            
-        </table>
 
-    </main>
-    <footer>
 
+
+<main>
+    <form id="form">
+        <label for="foodName"> Food Name:</label>
+        <input type="text" id="foodName">
+        <br><br>
+        <label for="foodType">Food Type:</label>
+        <select name="foodType" id="foodType">
+            <option value="Fruits and vegetables.">Fruits and vegetables.</option>
+            <option value="Starchy food.">Starchy food.</option>
+            <option value="Dairy.">Dairy.</option>
+            <option value="Protein.">Protein.</option>
+            <option value="Fat.">Fat.</option>
+        </select>
+        <br><br>
+        <label for="price">Price:</label>
+        <input type="text" id="price">
+        <br><br>
+        <input type="submit" id="submit">
+
+       
+    </form>
+</main>
+<footer>
+    
+        
+            <h3>Restaurant</h3>
+            <h3>restaurant where you can add your own favorite foods </h3>
+            
+                
             <p>&copy;2022 Talabat.com</p>
-    </footer>
-    <script type="text/javascript" src="./constructor.js" ></script>
+
+            
+</footer>
+    <script src="./app.js"></script>
 
 </body>
 </html>
